@@ -18,6 +18,15 @@ Este proyecto es una interfaz web en la que los usuarios pueden consultar el cli
 - **Navbar** con enlaces a tus perfiles de redes sociales (LinkedIn, Instagram, GitHub, Portfolio).
 - **Formulario de búsqueda** que permite al usuario ingresar una ciudad para consultar el clima.
 - **Display dinámico** de los datos del clima, como la temperatura, la humedad, el clima, etc.
+- **Footer** con tu nombre y los enlaces a redes sociales.
+
+## Historial de Actualizaciones
+
+### [v1.1.0] - 2024-12-10
+- **Geolocalización**: Ahora la aplicación detecta automáticamente la ubicación del usuario (con su permiso) para mostrar el clima actual sin necesidad de buscar una ciudad manualmente.
+- **Diseño mejorado**:
+  - Rediseño de las tarjetas de clima con un estilo más limpio y moderno.
+- **Clima en las próximas horas**: Se agregó una nueva sección que muestra el pronóstico del clima para las próximas horas, proporcionando al usuario más información detallada.
 
 ## Instrucciones para Ejecutar
 
@@ -51,14 +60,12 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 ## Capturas de Pantalla
 
-![1](https://github.com/user-attachments/assets/43eca605-b419-479a-8c16-f3cd3a46159f)
-![2](https://github.com/user-attachments/assets/f144a533-25fc-4cf1-af7e-15648fc6535a)
-
+*Incluye capturas de pantalla de la aplicación si las tienes.*
 
 ## Autor
 
 **Franco Tomas Armani**  
- **Full Stack Developer & Web Designer** | Diseño y desarrollo de páginas web
+Desarrollador **Full Stack** | React & Node.js | Apasionado por la tecnología
 
 ## Enlaces
 
