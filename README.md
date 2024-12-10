@@ -2,6 +2,8 @@
 
 Esta es una aplicación web construida con **React** que muestra el clima actual de una ciudad ingresada por el usuario. La aplicación utiliza la **API de OpenWeatherMap** para obtener los datos meteorológicos y tiene un diseño sencillo con un **Navbar** y un **Footer**.
 
+Preview: https://weatherfastfranarmani.netlify.app
+
 ## Descripción
 
 Este proyecto es una interfaz web en la que los usuarios pueden consultar el clima actual de cualquier ciudad del mundo. El usuario ingresa el nombre de la ciudad en un cuadro de búsqueda, y la aplicación consulta la API de OpenWeatherMap para devolver los datos meteorológicos actuales, como la temperatura, la humedad, el clima (soleado, nublado, lluvioso, etc.) y más.
