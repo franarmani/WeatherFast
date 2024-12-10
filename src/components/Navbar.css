@@ -1,7 +1,8 @@
+/* General navbar styles */
 .navbar {
   background-color: #2C3E50;
   padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -10,12 +11,11 @@
 }
 
 .navbar-container {
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
 }
 
 .navbar-logo {
@@ -27,6 +27,7 @@
   cursor: pointer;
 }
 
+/* Enlaces en pantallas grandes */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -40,31 +41,65 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: #ecf0f1; 
+  color: #ecf0f1;
   font-size: 16px;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #3498db; 
+  color: #3498db;
 }
 
+/* Estilos del menú hamburguesa */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  background-color: #ecf0f1;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Enlaces en pantallas pequeñas */
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background-color: #34495E;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.navbar-links.active li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.navbar-links.active a {
+  padding: 10px 20px;
+  color: #ecf0f1;
+}
+
+.navbar-links.active a:hover {
+  background-color: #475a6b;
+}
+
+/* Diseño responsivo */
 @media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-logo {
-    margin-bottom: 10px;
-  }
-
   .navbar-links {
-    flex-direction: column;
+    display: none;
   }
 
-  .navbar-links li {
-    margin: 10px 0;
+  .navbar-toggle {
+    display: flex;
   }
 }
