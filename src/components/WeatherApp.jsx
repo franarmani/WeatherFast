@@ -56,31 +56,6 @@ const WeatherApp = () => {
 
   useEffect(() => {
     handleGeolocation();
-
-    // Agregar el script de Windguru
-    const loader = () => {
-      const arg = [
-        "s=220832",
-        "m=3",
-        "uid=wg_fwdg_220832_3_1735047982116",
-        "wj=kmh",
-        "tj=c",
-        "waj=m",
-        "tij=m",
-        "odh=0",
-        "doh=24",
-        "fhours=240",
-        "hrsm=3",
-        "vt=forecasts",
-        "lng=es",
-        "p=TMP,WCHILL,WINDSPD,GUST,MWINDSPD,SMER,TMPE,FLHGT,CDC,TCDC,APCP1s,RH,RATING",
-      ];
-      const script = document.createElement("script");
-      script.src = `https://www.windguru.cz/js/widget.php?${arg.join("&")}`;
-      script.id = "wg_fwdg_220832_3_1735047982116";
-      document.body.appendChild(script);
-    };
-    loader();
   }, []);
 
   const handleSearch = () => {
